@@ -196,7 +196,8 @@ input, select{
 
 /** talents**/
 .talents .container{
-    padding:0;
+    padding-top:50px;
+    padding-bottom:50px;
 }
 .talents .nav{
     padding:0 40px;
@@ -271,14 +272,10 @@ input, select{
 .talents .triple-container .item .description{
     margin:14px 0 30px 0;
 }
-.talents .triple-container .item button{
+.talents .triple-container .item select{
     padding:10px 16px;
     display:flex;
     align-items:center;
-}
-.talents .triple-container .item button img{
-    height:6px;
-    margin-left:17px;
 }
 .talents .see-more{
     text-align:center;
