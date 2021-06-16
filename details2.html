@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Details - ProDevs</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header color-2">
+        <div class="navigation">
+            <div class="left">
+                <div class="item" href="index.html">
+                    <img src="icons/logo.svg" alt="logo" class="logo" />
+                </div>
+            </div>
+            <div class="right">
+                <button class="bg-3">Go to Dashboard</button>
+            </div>
+        </div>
+    </section>
+    <section class="details">
+        <div class="container">
+            <div class="nav color-3">
+                <img src="icons/arrow-left.svg" /> Explore
+            </div>
+            <div class="bg-white inner-container">
+                <div class="bio">
+                    <div class="pfp"></div>
+                    <div>
+                        <div class="text">
+                            <div class="font-24 color-black">Ola Aina</div>
+                            <div class="role color-6">UX Designer in Lagos, Nigeria</div>
+                            <div class="color-black">
+                                A young and enthusiastic professional with a passion for problem solving and value creation. Can work effectively within a team and as an individual with minimal supervision. A quick learner who is willing to learn new skills and apply them to actualize the company goals.
+                            </div>
+                            <div class="tags-container">
+                                <div class="color-black">Skills</div>
+                                <div class="tags">UX Design</div>
+                                <div class="tags">Wireframing</div>
+                                <div class="tags">Product Thinking</div>
+                                <div class="tags">Figma</div>
+                                <div class="tags">Sketch</div>
+                                <div class="tags">Jira</div>
+                            </div>
+                            <div class="tags-container">
+                                <div class="color-black">Industries</div>
+                                <div class="tags">Banking</div>
+                                <div class="tags">Recruitment</div>
+                            </div>
+                            <div class="tags-container">
+                                <div class="color-black">Core Values</div>
+                                <div class="tags">Professionalism</div>
+                                <div class="tags">Team Work</div>
+                                <div class="tags">Leadership</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="status bg-6 fw-700">
+                    <div>
+                        <span class="color-7">Ola Aina is Available for Hire</span>
+                        <span><button class="bg-3 bd-3 color-white" onclick="hire()">Hire Talent</button></span>
+                        <span><button class="bg-none bd-7 color-7">Schedule a call</button></span>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="left color-7 font-20">
+                        <img src="icons/experience.svg" /> Experience
+                    </div>
+                    <div class="right">
+                        <div class="item">
+                            <div class="dot bg-white">
+                                <div class="bg-3"></div>
+                            </div>
+                            <div class="font-20 color-black title">UI/UX Designer</div>
+                            <div class="skill color-7">
+                                <span>ProDevs Recruitment</span>
+                                <span>&bull;</span>
+                                <span>APRIL 2021 &bull; PRESENT</span>
+                            </div>
+                            <ul class="color-black">
+                                <li>Worked on the development and improvement on in-house Products developed by Prodevs. </li>
+                                <li>Created a design system that Prodevs uses for its clients Projects.</li>
+                                <li>Helped in the recruitment process of Candidates.</li>
+                                <li>Worked on infusing Design thinking to problem solving at Prodevs.</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="dot bg-white">
+                                <div class="bg-3"></div>
+                            </div>
+                            <div class="font-20 color-black title">Product Designer</div>
+                            <div class="skill color-7">
+                                <span>Dro Health</span>
+                                <span>&bull;</span>
+                                <span>APRIL 2021 &bull; PRESENT</span>
+                            </div>
+                            <ul class="color-black">
+                                <li>Created the Mobile App.</li>
+                                <li>Created a design system to guide development for the Mobile App.</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="dot bg-white">
+                                <div class="bg-3"></div>
+                            </div>
+                            <div class="font-20 color-black title">Design Intern</div>
+                            <div class="skill color-7">
+                                <span>Stutern</span>
+                                <span>&bull;</span>
+                                <span>APRIL 2021 &bull; PRESENT</span>
+                            </div>
+                            <ul class="color-black">
+                                <li>Learnt Product Design Under Industry Experts</li>
+                                <li>Worked On Clients Projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="left color-7 font-20">
+                        <div class="inner">
+                            <img src="icons/education.svg" /> Education
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="item">
+                            <div class="color-black">University of Lagos</div>
+                            <div class="color-7">APRIL 2021 &bull; PRESENT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup">
+        <div class="background" onclick="removeHire()"></div>
+        <div class="popup-content bg-white">
+            <div class="head">
+                <div class="font-30">Hire Talent</div>
+                <button onclick="removeHire()"><span class="close">&times;</span> Close</button>
+            </div>
+            <div class="body">
+                <div class="item">
+                    <div class="color-10 label">Candidate's Name <span class="color-8">*</span></div>
+                    <div class="input bd-9">
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="color-10 label">Role <span class="color-8">*</span></div>
+                    <div class="input bd-9">
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="color-10 label">Employment Type <span class="color-8">*</span></div>
+                    <div class="input bd-9">
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="color-10 label">Salary <span class="color-8">*</span></div>
+                    <div class="input bd-9">
+                        <input type="text" />
+                    </div>
+                </div>
+                <button class="bg-3">Submit Offer</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function hire() {
+        document.querySelector(".popup").classList.add("popup-active")
+    }
+    function removeHire() {
+        document.querySelector(".popup").classList.remove("popup-active")
+    }
+    </script>
+</body>
+</html>
