@@ -60,6 +60,9 @@ section{
 .bg-6{
     background:#EBFBF5;
 }
+.bg-7{
+    background:#007bff;
+}
 
 /* border */
 .bd-3{
@@ -76,6 +79,9 @@ section{
 /* color */
 .color-black{
     color:#000;
+}
+.color-white{
+    color:#fff;
 }
 .color-2{
     color:#002159;
@@ -134,7 +140,7 @@ button{
 input, select{
     border:none;
     outline:none;
-    border-radius:3px;
+    border-radius:5px;
     padding:15px 30px;
     background:none;
 }
@@ -253,6 +259,7 @@ input, select{
     top:-10vh;
     left:4.85vw;
     transition:.4s ease-in-out all;
+    z-index:10;
 }
 .talents .nav2 .search{
     display:grid;
@@ -302,7 +309,7 @@ input, select{
     box-shadow: 0px 4px 50px rgba(5, 82, 181, 0.1);
     border-radius: 5px;
     border-top:20px solid #BAE3FF;
-    padding:28px 48px 100px 48px;
+    padding:28px 48px 90px 48px;
     margin-bottom:33px;
     position:relative;
 }
@@ -328,8 +335,17 @@ input, select{
 .talents .triple-container .item .description{
     margin:14px 0 30px 0;
 }
+.talents .triple-container .item .description .badge{
+    color:#007bff;
+    border:1px solid #007bff;
+    padding:3px 6px;
+    border-radius:5px;
+    margin-right:5px;
+    display:inline-block;
+    margin-top:10px;
+}
 .talents .triple-container .item select{
-    padding:10px 16px;
+    padding:6px 12px;
     display:flex;
     align-items:center;
     position:absolute;
@@ -696,6 +712,26 @@ input, select{
         border-radius:4px;
     }
     .talents .nav .search .right .item:last-child{
+        margin-bottom:0;
+    }
+    .talents .nav2{
+        left:-2vw;
+        top:-40vh;
+    }
+    .talents .nav2 .search{
+        grid-template-columns:1fr;
+        justify-content:space-around;
+        text-align:center;
+    }
+    .talents .nav2 .search .right{
+        grid-template-columns:1fr;
+    }
+    .talents .nav2 .search .item{
+        width:87.5%;
+        margin:0 auto 10px auto;
+        border-radius:4px;
+    }
+    .talents .nav2 .search .right .item:last-child{
         margin-bottom:0;
     }
 
