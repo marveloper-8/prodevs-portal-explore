@@ -254,6 +254,9 @@ input, select{
     margin-bottom:33px;
 }
 .talents .triple-container .item .pfp{
+    /* background-image:url("../images/pfp.png"); */
+    background-position:center;
+    background-size:cover;
     width:60px;
     height:60px;
     border-radius:60px;
